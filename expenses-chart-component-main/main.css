@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 89%, 66%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+}
+.container__mybalance {
+    background-color:  hsl(10, 79%, 65%);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__mybalance p {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container__mybalance__text {
+    font-size: .65rem;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.container__mybalance__amount {
+    position: relative;
+    bottom: .8rem;
+    color: #fff;
+}
+
+.container__mybalance__circle {
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    top: 25px;
+}
+
+.circle1 {
+    border: 1px #fff solid;
+    left: 2px;
+    z-index: 1;
+}
+
+.circle2 {
+    background-color: #000;
+    border-radius: 12px;
+    height: 22px;
+    width: 22px;
+}
+
+.container__last7days {
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: .8rem;
+    border-radius: .8rem;
+}
+
+.day {
+  height: 1rem;
+  width: 1.4rem;
+  border-radius: .1rem;
+  background-color: #555;
+  display: inline-block;
+}
+
+.mon {
+  background-color: #EC755D;
+}
+
+.tue {
+    height: 2rem;
+    background-color: #EC755D;
+  }
+
+  .wed {
+    height: 3.2rem;
+    background-color: #B4DFE5;
+  }
+
+  .thu {
+    height: 2rem;
+    background-color: #FF9B87;
+  }
+
+  .fri {
+    height: 1.5rem;
+    background-color: #EC755D;
+  }
+
+  .sat {
+    height: 2.5rem;
+    background-color: #EC755D;
+  }
+
+  .sun {
+    height: 1.75rem;
+    background-color: #EC755D;
+  }
+
+.chart {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.chart__header {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.chart__bar {
+    display: flex;
+    gap: .2rem;
+    align-items: flex-end;
+}
+
+.chart__bar p {
+    font-size: .5rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.bar {
+    text-align: center;
+    position: relative;
+}
+
+.amount {
+    font-size: .5rem;
+    background-color: #000;
+    color: #fff;
+    padding: .2rem;
+    margin-bottom: .2rem;
+    border-radius: .2rem;
+}
+
+.horizontalLine {
+    height: 1px;
+    margin: 1.3rem 0;
+    background-color: hsl(28, 10%, 53%);
+}
+
+.container__total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'DM Sans', sans-serif;
+    align-items: center;
+}
+
+.container__totalthismonth p, .lastmonth{
+    font-size: .5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lastmonth {
+    text-align: right;
+}
+
+.percentage {
+    color: #000;
+    font-weight: bold;
+}

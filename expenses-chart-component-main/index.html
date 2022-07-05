@@ -5,39 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="main.css" />
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
 
-  My balance
-  $921.48
+  <div class="container">
+    <div class="container__mybalance">
+      <span>
+      <p class="container__mybalance__text">My balance</p>
+      <p class="container__mybalance__amount">$921.48</p>
+      </span>
+    
+      <div class="">
+        <span class="container__mybalance__circle circle1"> </span>
+        <span class="container__mybalance__circle circle2"> </span>
+      </div>
+    </div>
 
-  Spending - Last 7 days
+    <div class="container__last7days">
+      <div class="chart">
+        <div class="chart__header">
+          <p>Spending - Last 7 days</p>
+        </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+        <div class="chart__bar">
+            <div class="bar">
+              <span class="day mon"></span>
+              <p>mon</p>
+            </div>
 
-  Total this month
-  $478.33
+            <div class="bar">
+              <span class="day tue"></span>
+              <p>tue</p>
+            </div>
 
-  +2.4%
-  from last month
+            <div class="bar">
+              <div class="amount">$52.36</div>
+              <span class="day wed"></span>
+              <p>wed</p>
+            </div>
+
+            <div class="bar">
+              <div class="amount">$31.07</div>
+              <span class="day thu"></span>
+              <p>thu</p>
+            </div>
+
+            <div class="bar">
+              <span class="day fri"></span>
+              <p>fri</p>
+            </div>
+
+            <div class="bar">
+              <span class="day sat"></span>
+              <p>sat</p>
+            </div>
+
+            <div class="bar">
+              <span class="day sun"></span>
+              <p>sun</p>
+            </div>
+        </div>
+       
+      </div>
+
+      <div class="horizontalLine"></div>
+
+      <div class="container__total">
+        <div class="container__totalthismonth">
+          <p>Total this month</p>
+          <h3>$478.33</h3>
+        </div>
+        <div class="lastmonth">
+          <p class="percentage">+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Karan Pant</a>.
   </div>
 </body>
 </html>
