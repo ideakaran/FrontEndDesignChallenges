@@ -5,35 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="main.css" type="stylesheet" />
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="navigation">
+      <div class="navigation_left">
+        <div class="navigation_logo">
+          snap
+        </div>
+  
+        <div class="navigation_menu">
+          <div class="navigation_menu_features">
+            <ul>
+              <li><img src="" alt="todo list"/>Todo List</li>
+              <li><img src="" alt="calendar"/>Calendar</li>
+              <li><img src="" alt="reminders"/>Reminders</li>
+              <li><img src="" alt="planning"/>Planning</li>
+            </ul>
+          </div>
+          <div class="navigation_menu_company">
+            <ul>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="navigation_menu_careers">
+            <p>Careers</p>
+          </div>
+          <div class="navigation_menu_about">
+            <p>About</p>
+          </div>
+        </div>
+      </div>
 
-  Features
-  Company
-  Careers
-  About
+      <div class="navigation_right">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+      </div>
+    </div>
 
-  Login
-  Register
+    <div class="body">
+      <div class="body_leftside">
+        <h1>Make remote work</h1>
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        
+        <button>Learn more</button>
+      </div>
+      <div class="body_rightside">
+        
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Karan Pant</a>.
   </div>
 </body>
 </html>
